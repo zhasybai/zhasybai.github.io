@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Гостиничный комплекс «Жасыбай» в Астане: номера, сауна, бесплатная парковка, размещение и питание для спортивных команд. Бронирование через WhatsApp +7 775 459 13 12.">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Гостиница «Жасыбай» — Астана</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=PT+Sans:wght@400;700&display=swap">
+<style>
+/* Layout: спокойная гостиничная классика — асимметричная шапка, прайс таблицей, услуги колонками, тонкие латунные линии */
+:root{
+  --bg:#fbfbf9; --surface:#ffffff; --fg:#1b2420; --muted:#5c6762;
+  --green:#1f4d3a; --brass:#9c7a33; --line:#e3e6e1; --on-green:#f4f7f4; --accent-text:#1f4d3a;
+  --display:"Cormorant", Georgia, "Times New Roman", serif;
+  --body:"PT Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111613; --surface:#18201c; --fg:#e8ede9; --muted:#a2aea7;
+  --green:#2f6e54; --brass:#d1ad62; --line:#27322c; --on-green:#f4f7f4; --accent-text:#d1ad62; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111613; --surface:#18201c; --fg:#e8ede9; --muted:#a2aea7;
+  --green:#2f6e54; --brass:#d1ad62; --line:#27322c; --on-green:#f4f7f4; --accent-text:#d1ad62; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:1060px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;margin:0;text-wrap:balance}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+
+nav{border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-block:14px;gap:12px 20px;flex-wrap:wrap}
+.logo{font-family:var(--display);font-size:28px;font-weight:700;line-height:1}
+.logo small{display:block;font-family:var(--body);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:700;margin-bottom:4px}
+.links{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}
+.links a{color:var(--muted);text-decoration:none;font-size:15px}
+.links a:hover{color:var(--fg)}
+.lang{display:flex;border:1px solid var(--line);border-radius:2px;overflow:hidden}
+.lang button{background:none;border:0;padding:6px 10px;font:700 13px var(--body);color:var(--muted);cursor:pointer;letter-spacing:.06em}
+.lang button[aria-pressed="true"]{background:var(--green);color:var(--on-green)}
+
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;padding-block:48px 64px;align-items:end;border-bottom:1px solid var(--line)}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr;gap:24px;padding-top:32px}}
+.hero h1{font-size:clamp(46px,9vw,96px)}
+.hero h1 em{font-style:italic;color:var(--accent-text)}
+.hero-side{display:grid;gap:18px;min-width:0}
+.hero-side p{margin:0;color:var(--muted)}
+.btn{display:inline-block;padding:14px 24px;background:var(--green);color:var(--on-green);text-decoration:none;border:0;cursor:pointer;font:700 15px var(--body);letter-spacing:.03em;border-radius:2px}
+.btn:hover{filter:brightness(1.1)}
+.btn-line{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--fg)}
+.proof{display:flex;gap:14px;align-items:baseline;border-top:1px solid var(--brass);padding-top:14px}
+.proof b{font-family:var(--display);font-size:42px;font-variant-numeric:tabular-nums;line-height:1}
+.proof span{font-size:14px;color:var(--muted)}
+
+section .wrap{padding-block:64px;display:grid;gap:26px}
+h2{font-size:clamp(34px,5vw,52px)}
+.kicker{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:700}
+.note{font-size:14px;color:var(--muted);margin:0}
+
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:540px}
+th{text-align:left;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:10px 12px;border-bottom:1px solid var(--fg)}
+th.num,td.num{text-align:right}
+td{padding:18px 12px;border-bottom:1px solid var(--line);vertical-align:baseline}
+td:first-child{font-family:var(--display);font-size:25px;font-weight:700}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap;font-size:18px}
+td.num.day{font-weight:700}
+td.act{text-align:right}
+td button{background:none;border:0;color:var(--accent-text);font:700 15px var(--body);cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:4px}
+
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+@media (max-width:700px){.services{grid-template-columns:1fr}}
+.sauna{background:var(--surface);border:1px solid var(--line);padding:24px;display:grid;gap:8px;border-radius:2px}
+.sauna h3{font-size:32px}
+.sauna .price{font-family:var(--display);font-size:24px;color:var(--accent-text);font-weight:700}
+.sauna p{margin:0;color:var(--muted)}
+.svc-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
+@media (max-width:700px){.svc-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.svc-list li{padding:16px 12px 16px 0;border-bottom:1px solid var(--line)}
+.svc-list b{display:block}
+.svc-list span{color:var(--muted);font-size:15px;font-variant-numeric:tabular-nums}
+
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:170px;gap:12px}
+.gallery figure{margin:0;position:relative;border:1px dashed var(--brass);background:repeating-linear-gradient(135deg,var(--surface) 0 14px,var(--bg) 14px 28px);display:flex;align-items:flex-end;padding:14px;border-radius:2px}
+.gallery figure:first-child{grid-row:span 2}
+.gallery figcaption{font-family:var(--display);font-size:22px;font-weight:700}
+.gallery figcaption small{display:block;font-family:var(--body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+@media (max-width:640px){.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:130px}.gallery figure:first-child{grid-column:span 2;grid-row:span 1}}
+
+.reviews{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.review{margin:0;display:grid;gap:12px;align-content:start;border-top:2px solid var(--brass);padding-top:16px}
+.review blockquote{margin:0;font-size:17px}
+.review footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.review footer b{color:var(--fg)}
+.stars{color:var(--brass);letter-spacing:2px}
+
+.where{display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+@media (max-width:760px){.where{grid-template-columns:1fr}}
+.stops{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.stops li{display:flex;gap:14px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:12px}
+.stops b{font-family:var(--display);font-size:30px;min-width:4.2em;font-variant-numeric:tabular-nums}
+.stops span{color:var(--muted)}
+.addr-card{background:var(--surface);border:1px solid var(--line);padding:24px;display:grid;gap:14px;align-content:start;border-radius:2px}
+.addr-card .big{font-family:var(--display);font-size:32px;font-weight:700;line-height:1.1}
+
+.band{background:var(--green);color:var(--on-green)}
+.band .wrap{grid-template-columns:1fr 1.1fr;align-items:start}
+@media (max-width:820px){.band .wrap{grid-template-columns:1fr}}
+.band .kicker{color:#e3c47e}
+.band dl{margin:0;display:grid;gap:16px}
+.band dt{font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+.band dd{margin:2px 0 0;font-family:var(--display);font-size:28px;font-weight:700;user-select:all;word-break:break-word}
+form{display:grid;gap:14px;background:var(--surface);color:var(--fg);padding:24px;border-radius:2px;min-width:0}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:440px){.row2{grid-template-columns:1fr}}
+label{display:grid;gap:6px;font-size:13px;font-weight:700;color:var(--muted)}
+input,select{font:16px var(--body);padding:11px 12px;border:1px solid var(--line);border-radius:2px;background:var(--bg);color:var(--fg);width:100%}
+.total{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding-top:12px;gap:10px}
+.total b{font-family:var(--display);font-size:34px;font-variant-numeric:tabular-nums}
+.total span{font-size:14px;color:var(--muted)}
+.form-actions{display:flex;flex-wrap:wrap;gap:10px}
+.form-actions .btn-line{color:var(--fg)}
+.tabs{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;margin:0 24px -1px 0;padding:10px 0;font:700 17px var(--body);color:var(--muted);cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--fg);border-color:var(--brass)}
+.panel{display:grid;gap:22px}
+.team-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+@media (max-width:760px){.team-grid{grid-template-columns:1fr}}
+.cond{margin:0;display:grid;border-top:1px solid var(--line)}
+.cond div{display:grid;grid-template-columns:9em 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+@media (max-width:440px){.cond div{grid-template-columns:1fr;gap:2px}}
+.cond dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;padding-top:3px}
+.cond dd{margin:0;font-size:17px}
+.seg{display:flex;border:1px solid var(--line);border-radius:2px;overflow:hidden}
+.seg button{flex:1;background:none;border:0;padding:11px 10px;font:700 15px var(--body);color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--green);color:var(--on-green)}
+.fs{display:grid;gap:14px}
+.amen-wrap{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.amen-wrap b{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.amen{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.amen li{border:1px solid var(--brass);padding:5px 12px;font-size:15px;border-radius:2px}
+.faq h3{font-size:30px;margin-top:14px}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{font-family:var(--display);font-size:24px;font-weight:700;cursor:pointer;line-height:1.2}
+details p{margin:8px 0 0;color:var(--muted);max-width:60ch}
+.hero-photo .wrap{padding-block:32px 0}
+.hero-photo img{width:100%;aspect-ratio:21/8;object-fit:cover;display:block;border-radius:2px}
+.gal-group{display:grid;gap:12px}
+.gal-group h3{font-size:28px}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,31%);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;overscroll-behavior-x:contain}
+@media (max-width:640px){.strip{grid-auto-columns:82%}}
+.ph{scroll-snap-align:start;padding:0;border:0;background:var(--surface);cursor:zoom-in;border-radius:2px;overflow:hidden}
+.ph img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block}
+@media (prefers-reduced-motion:no-preference){.ph img{transition:transform .3s}.ph:hover img{transform:scale(1.03)}}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,12,10,.94);display:flex;align-items:center;justify-content:center;padding:max(56px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(56px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.lb-btn{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:48px;height:48px;border-radius:50%;font:400 30px/1 var(--body);cursor:pointer}
+.lb-btn:hover{background:rgba(255,255,255,.24)}
+.lb-x{top:calc(8px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px))}
+.lb-prev{left:calc(12px + env(safe-area-inset-left,0px));top:50%;transform:translateY(-50%)}
+.lb-next{right:calc(12px + env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%)}
+/* Анимации */
+.total b{display:inline-block}
+@media (prefers-reduced-motion:no-preference){
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes zoomIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(209,173,98,.6)}100%{box-shadow:0 0 0 16px rgba(209,173,98,0)}}
+@keyframes bump{40%{transform:scale(1.08);color:var(--accent-text)}}
+@keyframes revealIn{from{opacity:.2;transform:translateY(30px)}to{opacity:1;transform:none}}
+.logo img{animation:fadeIn .9s ease both}
+.hero h1{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero-side>*{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.hero-side>*:nth-child(1){animation-delay:.2s}
+.hero-side>*:nth-child(2){animation-delay:.32s}
+.hero-side>*:nth-child(3){animation-delay:.44s}
+.proof{position:relative;border-top-color:transparent}
+.proof::before{content:"";position:absolute;left:0;right:0;top:-1px;height:1px;background:var(--brass);transform-origin:left;animation:draw 1.2s .6s cubic-bezier(.2,.7,.2,1) both}
+.btn{transition:transform .2s,box-shadow .2s,filter .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px -12px rgba(0,0,0,.5)}
+#waBtn{animation:ring 2.2s ease-out 1.2s 3}
+tbody tr{transition:background-color .2s}
+tbody tr:hover{background:var(--surface)}
+.svc-list li,.stops li{transition:translate .2s}
+.svc-list li:hover,.stops li:hover{translate:4px 0}
+[role="tabpanel"]:not([hidden]){animation:rise .45s cubic-bezier(.2,.7,.2,1) both}
+details[open] p{animation:rise .35s ease both}
+.lb:not([hidden]){animation:fadeIn .25s ease both}
+.lb:not([hidden]) img{animation:zoomIn .3s ease both}
+.total b.bump{animation:bump .35s ease}
+@supports (animation-timeline: view()){
+section h2,section .kicker,.review,.sauna,.svc-list li,.gal-group,.cond div,details,.stops li,.addr-card,tbody tr,.amen-wrap,.band dl>div,form{animation:revealIn linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+}
+}
+/* Анимации, часть 2 */
+.hero{position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:1}
+.hero-art{position:absolute;right:0;bottom:0;width:min(640px,92vw);height:auto;z-index:0;pointer-events:none;color:var(--brass);opacity:.38}
+.kicker{display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:28px;height:1px;background:currentColor;flex-shrink:0}
+.stars{color:var(--brass)}
+.progress{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);height:3px;background:var(--brass);transform-origin:left;transform:scaleX(0);z-index:45;pointer-events:none}
+.fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;padding:14px 22px;border-radius:999px;background:var(--green);color:var(--on-green);font:700 15px var(--body);text-decoration:none;box-shadow:0 12px 28px -12px rgba(0,0,0,.55);opacity:0;transform:translateY(150%);pointer-events:none}
+.fab.show{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-reduced-motion:no-preference){
+@keyframes shimmer{from{background-position:120% 0}to{background-position:-120% 0}}
+@keyframes sunUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes floaty{50%{transform:translateY(-6px)}}
+@keyframes drawLine{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.hero-art .ridge{stroke-dasharray:1;stroke-dashoffset:1;animation:drawLine 2.4s .3s cubic-bezier(.4,0,.2,1) forwards}
+.hero-art .ridge2{animation-delay:.9s}
+.hero-art .sun{animation:sunUp 1.4s 1.2s cubic-bezier(.2,.7,.2,1) both}
+.hero-art .sun-g{animation:floaty 6s 2.8s ease-in-out infinite}
+.stars{background:linear-gradient(100deg,var(--brass) 0 42%,#f6e2a8 50%,var(--brass) 58% 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 4s linear infinite}
+.links a{background:linear-gradient(var(--brass),var(--brass)) left 100%/0 1px no-repeat;transition:background-size .3s,color .2s}
+.links a:hover{background-size:100% 1px}
+.review,.sauna,.addr-card{transition:translate .25s,box-shadow .25s}
+.sauna:hover,.addr-card:hover{translate:0 -4px;box-shadow:0 16px 30px -20px rgba(0,0,0,.5)}
+.review:hover{translate:0 -4px}
+.fab{transition:opacity .35s,transform .45s cubic-bezier(.2,.9,.3,1.3)}
+.fab.show{animation:ring 2.2s ease-out .4s 2}
+.lang button{transition:background-color .25s,color .25s}
+.io-in{animation:revealIn .75s cubic-bezier(.2,.7,.2,1) both}
+}
+/* Анимации фото */
+@media (prefers-reduced-motion:no-preference){
+@keyframes photoIn{from{opacity:0;transform:scale(1.08)}to{opacity:1;transform:none}}
+@keyframes phIn{from{opacity:.25;transform:scale(.9) translateX(30px)}to{opacity:1;transform:none}}
+.ph img.pending{opacity:0}
+.ph img.loaded{animation:photoIn .8s cubic-bezier(.2,.7,.2,1) both}
+.ph img.loaded:hover{animation:none}
+@supports (animation-timeline: view()){
+.ph{animation:phIn linear both;animation-timeline:view(inline);animation-range:entry 0% entry 90%}
+}
+}
+.page-foot .wrap{padding-block:24px;font-size:14px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <div class="logo"><img src="data:image/png;base64,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" alt="Жасыбай" width="260" height="72" style="height:52px;width:auto;display:block"><small data-t="brand_kicker" style="margin:4px 0 0">Гостиничный комплекс</small></div>
+  <div class="links">
+    <a href="#rooms" data-t="nav_rooms">Номера</a>
+    <a href="#services" data-t="nav_services">Услуги</a>
+    <a href="#reviews" data-t="nav_reviews">Отзывы</a>
+    <a href="#info" data-t="nav_info">Условия</a>
+    <a href="#book" data-t="nav_book">Бронь</a>
+    <div class="lang" role="group" aria-label="Язык">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="kk" aria-pressed="false">KZ</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</div></nav>
+
+<header class="hero">
+<svg class="hero-art" viewBox="0 0 640 220" aria-hidden="true">
+  <g class="sun-g"><circle class="sun" cx="470" cy="70" r="22" fill="none" stroke="currentColor" stroke-width="2"></circle></g>
+  <path class="ridge" pathLength="1" d="M0 210 L90 140 L140 175 L250 60 L330 150 L400 100 L520 200 L640 130" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+  <path class="ridge ridge2" pathLength="1" d="M60 220 L170 150 L230 190 L330 120 L420 180 L520 140 L640 200" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" opacity=".6"></path>
+</svg>
+<div class="wrap">
+  <h1 data-th="hero_h1">Уютный отдых <em>в&nbsp;Астане</em></h1>
+  <div class="hero-side">
+    <p data-t="hero_p">Чистые номера, сауна и бесплатная парковка. Платите за полсуток или за сутки.</p>
+    <div class="form-actions">
+      <a class="btn" href="#book" data-t="hero_btn">Забронировать</a>
+      <a class="btn btn-line" href="#rooms" data-t="hero_btn2">Цены</a>
+    </div>
+    <div class="proof"><b>191</b><span data-t="hero_proof">отзыв гостей в 2ГИС</span></div>
+  </div>
+</div></header>
+
+<section id="rooms"><div class="wrap">
+  <div class="kicker" data-t="rooms_kicker">Цены</div>
+  <h2 data-t="rooms_h">Номера и цены</h2>
+  <div class="tabs" role="tablist">
+    <button type="button" role="tab" data-tab="guests" aria-selected="true" data-t="tab_guests">Гостям</button>
+    <button type="button" role="tab" data-tab="teams" aria-selected="false" data-t="tab_teams">Командам и группам</button>
+  </div>
+  <div class="panel" id="panel-guests" role="tabpanel">
+    <div class="table-wrap"><table>
+      <thead><tr><th data-t="th_room">Номер</th><th class="num" data-t="th_half">Полсуток</th><th class="num" data-t="th_day">Сутки</th><th></th></tr></thead>
+      <tbody id="roomRows"></tbody>
+    </table></div>
+    <div class="amen-wrap"><b data-t="am_h">В каждом номере</b>
+      <ul class="amen"><li data-t="am_1">Душ и туалет</li><li data-t="am_2">Телевизор</li><li data-t="am_3">Холодильник</li><li data-t="am_4">Бесплатный Wi-Fi</li></ul>
+    </div>
+    <p class="note" data-t="rooms_note">Цена за номер, для проживания на 1–5 ночей. Продление: 1 час — 1 500 ₸. Бронирование бесплатно.</p>
+  </div>
+  <div class="panel" id="panel-teams" role="tabpanel" hidden>
+    <div class="team-grid">
+      <dl class="cond">
+        <div><dt data-t="tm_for_h">Для кого</dt><dd data-t="tm_for">Спортивные команды, школы и организации</dd></div>
+        <div><dt data-t="tm_price_h">Цена</dt><dd data-t="tm_price">За человека, по согласованию</dd></div>
+        <div><dt data-t="tm_cap_h">Вместимость</dt><dd data-t="tm_cap">Больше 100 человек. Номера на 1, 2, 3 и 4 места</dd></div>
+        <div><dt data-t="tm_food_h">Питание</dt><dd data-t="tm_food">Трёхразовое: завтрак, обед и ужин в ресторане гостиницы</dd></div>
+        <div><dt data-t="tm_pay_h">Оплата</dt><dd data-t="tm_pay">Счёт для организаций, Kaspi, карта или наличные</dd></div>
+        <div><dt data-t="tm_how_h">Как забронировать</dt><dd data-t="tm_how">Оставьте заявку: даты, сколько детей и взрослых</dd></div>
+      </dl>
+      <div class="addr-card">
+        <div class="big" data-t="tm_big">Цена по согласованию</div>
+        <p class="note" data-t="tm_note">Стоимость зависит от размера группы, дат и питания. Рассчитаем её после заявки.</p>
+        <div><button type="button" class="btn" data-team-book data-t="tm_btn">Оставить заявку для команды</button></div>
+      </div>
+    </div>
+    <div class="gal-group"><h3 data-t="g_rest">Ресторан для команд</h3><div class="strip"><button type="button" class="ph"><img src="img/rs-2.jpg" alt="Ресторан гостиницы" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rs-4.jpg" alt="Ресторан гостиницы" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rs-3.jpg" alt="Ресторан гостиницы" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rs-1.jpg" alt="Ресторан, общий вид" width="2000" height="456" loading="lazy"></button></div></div>
+  </div>
+</div></section>
+
+<section id="photos"><div class="wrap">
+  <div class="kicker" data-t="ph_kicker">Фото</div>
+  <h2 data-t="ph_h">Фото гостиницы</h2>
+  <p class="note" data-t="ph_note">Листайте вбок и нажмите на фото, чтобы увеличить.</p>
+    <div class="gal-group"><h3 data-t="g_lb">Холл и ресепшн</h3><div class="strip"><button type="button" class="ph"><img src="img/lb-3.jpg" alt="Холл с диванами" width="1400" height="632" loading="lazy"></button><button type="button" class="ph"><img src="img/lb-4.jpg" alt="Ресепшн и лифты" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/lb-0.jpg" alt="Стойка ресепшн" width="1400" height="647" loading="lazy"></button></div></div>
+    <div class="gal-group"><h3 data-t="g_dbl">Номера с двуспальной кроватью</h3><div class="strip"><button type="button" class="ph"><img src="img/nb-1.jpg" alt="Номер с двуспальной кроватью" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/nb-2.jpg" alt="Номер с двуспальной кроватью" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/nb-3.jpg" alt="Номер с двуспальной кроватью и креслами" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/nb-4.jpg" alt="Номер с двуспальной кроватью" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/nb-5.jpg" alt="Номер с двуспальной кроватью" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/nb-6.jpg" alt="Санузел" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/nb-7.jpg" alt="Санузел" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rb-2.jpg" alt="Номера с двуспальной кроватью, фото 2" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rb-3.jpg" alt="Номера с двуспальной кроватью, фото 3" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rb-4.jpg" alt="Номера с двуспальной кроватью, фото 4" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rb-5.jpg" alt="Номера с двуспальной кроватью, фото 5" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rb-6.jpg" alt="Номера с двуспальной кроватью, фото 6" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rb-7.jpg" alt="Номера с двуспальной кроватью, фото 7" width="1400" height="647" loading="lazy"></button></div></div>
+    <div class="gal-group"><h3 data-t="g_lux">Большой номер с диваном</h3><div class="strip"><button type="button" class="ph"><img src="img/rd-1.jpg" alt="Большой номер с диваном, фото 1" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rd-2.jpg" alt="Большой номер с диваном, фото 2" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/rd-3.jpg" alt="Большой номер с диваном, фото 3" width="1400" height="647" loading="lazy"></button></div></div>
+    <div class="gal-group"><h3 data-t="g_2">Номера на 2 места</h3><div class="strip"><button type="button" class="ph"><img src="img/n2-1.jpg" alt="Номер на 2 места" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/n2-2.jpg" alt="Номер на 2 места" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/n2-3.jpg" alt="Санузел" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r2-1.jpg" alt="Номера на 2 места, фото 1" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r2-2.jpg" alt="Номера на 2 места, фото 2" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r2-3.jpg" alt="Номера на 2 места, фото 3" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r2-4.jpg" alt="Номера на 2 места, фото 4" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r2-5.jpg" alt="Номера на 2 места, фото 5" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r2-6.jpg" alt="Номера на 2 места, фото 6" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r2-7.jpg" alt="Номера на 2 места, фото 7" width="1400" height="647" loading="lazy"></button></div></div>
+    <div class="gal-group"><h3 data-t="g_3">Номера на 3 места</h3><div class="strip"><button type="button" class="ph"><img src="img/n3-1.jpg" alt="Номер на 3 места" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/n3-2.jpg" alt="Номер на 3 места" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/n3-3.jpg" alt="Номер на 3 места" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r3-1.jpg" alt="Номера на 3 места, фото 1" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r3-2.jpg" alt="Номера на 3 места, фото 2" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r3-3.jpg" alt="Номера на 3 места, фото 3" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r3-4.jpg" alt="Номера на 3 места, фото 4" width="1400" height="647" loading="lazy"></button></div></div>
+    <div class="gal-group"><h3 data-t="g_4">Номера на 4 места</h3><div class="strip"><button type="button" class="ph"><img src="img/r4-1.jpg" alt="Номера на 4 места, фото 1" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r4-2.jpg" alt="Номера на 4 места, фото 2" width="1400" height="647" loading="lazy"></button><button type="button" class="ph"><img src="img/r4-3.jpg" alt="Номера на 4 места, фото 3" width="1400" height="647" loading="lazy"></button></div></div>
+</div></section>
+
+<section id="services" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+  <div class="kicker" data-t="svc_kicker">Услуги</div>
+  <h2 data-t="svc_h">Всё на месте</h2>
+  <div class="services">
+    <article class="sauna" style="background:var(--bg)">
+      <h3 data-t="sauna_h">Сауна</h3>
+      <div class="price" data-t="sauna_price">5 000 ₸ / час</div>
+      <p data-t="sauna_p">Минимум 2 часа. До 4 человек, за каждого следующего доплата 500 ₸. Закажите 3 часа, и 4-й час в подарок.</p>
+    </article>
+    <article class="sauna" style="background:var(--bg)">
+      <h3 data-t="vip_h">VIP-сауна</h3>
+      <div class="price" data-t="vip_price">12 000 ₸ / час</div>
+      <p data-t="vip_p">Минимум 2 часа. До 8 человек. Закажите 3 часа, и 4-й час в подарок.</p>
+    </article>
+  </div>
+  <ul class="svc-list">
+    <li><b data-t="s_book">Бронирование</b><span data-t="s_free">бесплатно</span></li>
+    <li><b data-t="s_park">Парковка</b><span data-t="s_free">бесплатно</span></li>
+    <li><b>Wi-Fi</b><span data-t="s_wifi_v">бесплатно для гостей</span></li>
+    <li><b data-t="s_biz">Бизнес-центр</b><span data-t="s_biz_v">4 000 ₸ / час</span></li>
+    <li><b data-t="s_print">Распечатка</b><span data-t="s_print_v">50 ₸ / страница</span></li>
+    <li><b data-t="s_laundry">Прачечная</b><span data-t="s_laundry_v">200 ₸ / вещь</span></li>
+  </ul>
+</div></section>
+
+<section id="reviews" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+  <div class="kicker" data-t="rev_kicker">Отзывы</div>
+  <h2 data-t="rev_h">Что говорят гости</h2>
+  <div class="reviews">
+    <figure class="review"><span class="stars" aria-label="5/5">★★★★★</span><blockquote>Очень уютная чистая и комфортная гостиница рядом находится рынок много кафе персонал культурные отзывчивые и компетентные я давно пользуюсь услугами этой гостиницы и доволен ставлю оценку 5 +</blockquote><footer><b>Руслан Оразов</b><span>29.09.2026</span></footer></figure>
+    <figure class="review"><span class="stars" aria-label="5/5">★★★★★</span><blockquote>Взял полулюкс, блин очень круто. Комнаты большие чисто всё в комнате есть. Поэтому рекомендую) Не раз тут уже очень часто приезжаю в город и сюда сразу</blockquote><footer><b>Iamermek</b><span>11.09.2026</span></footer></figure>
+    <figure class="review"><span class="stars" aria-label="5/5">★★★★★</span><blockquote>Мы постоянные клиенты очень нравится персонал вежливый отзывчивый номера чистые по мере возможности предостовляют все необходимое для проживания советуем посетить</blockquote><footer><b>Надежда</b><span>23.07.2026</span></footer></figure>
+    <figure class="review"><span class="stars" aria-label="5/5">★★★★★</span><blockquote>Спасибо за отличный отдых, еда вкусная. Гостиница чистая и уютная, персонал вежливый, обслуживание на высшем уровне</blockquote><footer><b>marlen</b><span>15.06.2026</span></footer></figure>
+    <figure class="review"><span class="stars" aria-label="5/5">★★★★★</span><blockquote>отель хороший, еда вкусная, на обеде 1и2 и салат и компот, приезали сюда с командой! Зал есть в ней диваны где можно отдохнуть советую сюда</blockquote><footer><b>Мансур Бахытбек</b><span>09.06.2026</span></footer></figure>
+  </div>
+  <p class="note"><span data-t="rev_note">Отзывы из 2ГИС, оставлены гостями. Всего 191 отзыв.</span> <a href="https://2gis.kz/astana/geo/70000001018109121" target="_blank" rel="noopener" data-t="rev_link">Читать все в 2ГИС</a></p>
+</div></section>
+
+<section id="info"><div class="wrap">
+  <div class="kicker" data-t="info_kicker">Условия</div>
+  <h2 data-t="info_h">Заезд и оплата</h2>
+  <dl class="cond">
+    <div><dt data-t="i1_h">Заезд</dt><dd data-t="i1">В любое время. Ресепшн работает круглосуточно</dd></div>
+    <div><dt data-t="i2_h">Тарифы</dt><dd data-t="i2">Полсуток или сутки. Продление: 1 час — 1 500 ₸</dd></div>
+    <div><dt data-t="i3_h">Оплата</dt><dd data-t="i3">Kaspi, банковская карта, наличные, счёт для организаций</dd></div>
+    <div><dt data-t="i4_h">Бронь</dt><dd data-t="i4">Бесплатно и без предоплаты, через WhatsApp</dd></div>
+  </dl>
+  <div class="faq">
+    <h3 data-t="faq_h">Частые вопросы</h3>
+    <details><summary data-t="q1">Во сколько можно заехать?</summary><p data-t="a1">В любое время. Ресепшн работает круглосуточно, оплата идёт за полсуток или за сутки.</p></details>
+    <details><summary data-t="q2">Можно снять номер не на целые сутки?</summary><p data-t="a2">Да, есть тариф на полсуток. Если нужно остаться дольше, продление стоит 1 500 ₸ за час.</p></details>
+    <details><summary data-t="q3">Как можно оплатить?</summary><p data-t="a3">Через Kaspi, банковской картой или наличными. Организациям выставляем счёт.</p></details>
+    <details><summary data-t="q7">Нужна ли предоплата?</summary><p data-t="a7">Нет. Бронирование бесплатное, предоплата не нужна. Оплата при заселении.</p></details>
+    <details><summary data-t="q4">Есть ли парковка и Wi-Fi?</summary><p data-t="a4">Да. Парковка и Wi-Fi для гостей бесплатные.</p></details>
+    <details><summary data-t="q5">Вы принимаете спортивные команды?</summary><p data-t="a5">Да. Можем разместить больше 100 человек в номерах на 1, 2, 3 и 4 места и организовать трёхразовое питание. Цена для команд по согласованию: оставьте заявку, и мы её рассчитаем.</p></details>
+    <details><summary data-t="q6">Как забронировать сауну?</summary><p data-t="a6">Напишите нам в WhatsApp. Сауна стоит 5 000 ₸ в час, VIP-сауна 12 000 ₸ в час, минимум 2 часа.</p></details>
+  </div>
+</div></section>
+
+<section id="map" style="background:var(--surface);border-top:1px solid var(--line)"><div class="wrap">
+  <div class="kicker" data-t="map_kicker">Как добраться</div>
+  <h2 data-t="map_h">Улица Валиханова, 26</h2>
+  <div class="where">
+    <ul class="stops">
+      <li><b data-t="map_bus">Автобус</b><span data-t="map_stops">остановки «Тұлпар» и «Жасыбай»</span></li>
+      <li><b>2,9 км</b><span data-t="map_center">до центра города</span></li>
+      <li><b>2,9 км</b><span data-t="map_rail">до железнодорожного вокзала</span></li>
+      <li><b>16,7 км</b><span data-t="map_air">до аэропорта</span></li>
+    </ul>
+    <div class="addr-card">
+      <div class="big" data-t="map_addr">Астана, ул. Валиханова, 26</div>
+      <p class="note" data-t="map_park">Бесплатная парковка для гостей.</p>
+      <div><a class="btn" href="https://2gis.kz/astana/geo/70000001018109121" target="_blank" rel="noopener" data-t="map_btn">Открыть на карте 2ГИС</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="band" id="book"><div class="wrap">
+  <div style="display:grid;gap:24px">
+    <div class="kicker" data-t="book_kicker">Бронирование</div>
+    <h2 data-t="book_h">Ждём вас в гости</h2>
+    <dl>
+      <div><dt data-t="c_phone">Телефон / WhatsApp</dt><dd>+7 775 459 13 12</dd></div>
+      <div><dt>Instagram</dt><dd><a href="https://instagram.com/hotel_zhasybai_astana" target="_blank" rel="noopener" style="text-decoration:none">@hotel_zhasybai_astana</a></dd></div>
+      <div><dt data-t="c_rec">Ресепшн</dt><dd data-t="c_rec_v">Круглосуточно</dd></div>
+      <div><dt data-t="c_addr">Адрес</dt><dd data-t="map_addr">Астана, ул. Валиханова, 26</dd></div>
+    </dl>
+  </div>
+  <form id="bookForm" novalidate>
+    <div class="seg" role="group">
+      <button type="button" data-mode="guest" aria-pressed="true" data-t="mode_guest">Гость</button>
+      <button type="button" data-mode="team" aria-pressed="false" data-t="mode_team">Команда / группа</button>
+    </div>
+    <div class="row2">
+      <label for="checkin"><span data-t="f_in">Дата заезда</span><input type="date" id="checkin"></label>
+      <label for="name"><span data-t="f_name">Ваше имя</span><input type="text" id="name" autocomplete="name"></label>
+    </div>
+    <div class="fs" id="guestFields">
+      <div class="row2">
+        <label for="room"><span data-t="f_room">Номер</span><select id="room"></select></label>
+        <label for="plan"><span data-t="f_plan">Тариф</span><select id="plan"><option value="day" data-t="opt_day">Сутки</option><option value="half" data-t="opt_half">Полсуток</option></select></label>
+      </div>
+      <div class="row2">
+        <label for="days" id="daysWrap"><span data-t="f_days">Сколько суток</span><input type="number" id="days" min="1" max="30" value="1"></label>
+        <label for="guests"><span data-t="f_guests">Гостей</span><input type="number" id="guests" min="1" max="8" value="1"></label>
+      </div>
+      <div class="total"><span data-t="f_total">Примерная стоимость</span><b id="total">15 000 ₸</b></div>
+    </div>
+    <div class="fs" id="teamFields" hidden>
+      <label for="team"><span data-t="f_team">Команда или организация</span><input type="text" id="team"></label>
+      <div class="row2">
+        <label for="nights"><span data-t="f_nights">Сколько ночей</span><input type="number" id="nights" min="1" max="30" value="3"></label>
+        <label for="meals"><span data-t="f_meals">Питание</span><select id="meals"><option value="3" data-t="meal_3">Трёхразовое</option><option value="b" data-t="meal_b">Завтрак</option><option value="0" data-t="meal_none">Без питания</option></select></label>
+      </div>
+      <div class="row2">
+        <label for="kids"><span data-t="f_kids">Детей</span><input type="number" id="kids" min="0" max="200" value="15"></label>
+        <label for="adults"><span data-t="f_adults">Взрослых (тренеры, родители)</span><input type="number" id="adults" min="0" max="50" value="2"></label>
+      </div>
+      <div class="total"><span data-t="f_team_total">Стоимость</span><b style="font-size:26px" data-t="by_agreement">по согласованию</b></div>
+    </div>
+    <div class="form-actions">
+      <a class="btn" id="waBtn" href="https://wa.me/77754591312" target="_blank" rel="noopener" data-t="f_send">Отправить в WhatsApp</a>
+    </div>
+    <p class="note" data-t="f_note">Откроется чат WhatsApp с готовой заявкой. Если не открылся, напишите нам на +7 775 459 13 12.</p>
+  </form>
+</div></section>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<a class="fab" id="fab" href="#book" data-t="hero_btn">Забронировать</a>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Фото">
+  <button type="button" class="lb-btn lb-x" id="lbClose" aria-label="Закрыть">×</button>
+  <button type="button" class="lb-btn lb-prev" id="lbPrev" aria-label="Предыдущее фото">‹</button>
+  <img id="lbImg" alt="">
+  <button type="button" class="lb-btn lb-next" id="lbNext" aria-label="Следующее фото">›</button>
+</div>
+
+<div class="page-foot"><div class="wrap"><span>© <span data-t="foot">Гостиничный комплекс «Жасыбай»</span></span><span data-t="map_addr">Астана, ул. Валиханова, 26</span></div></div>
+
+<script>
+(function(){
+const ROOMS=[
+ {id:'std',half:8000,day:15000,n:{ru:'Стандарт (одноместный)',kk:'Стандарт (1 орынды)',en:'Standard (single)'}},
+ {id:'dbl',half:11000,day:22000,n:{ru:'2-местный номер',kk:'2 орынды нөмір',en:'Double room'}},
+ {id:'tri',half:16000,day:31000,n:{ru:'3-местный номер',kk:'3 орынды нөмір',en:'Triple room'}},
+ {id:'qd',half:21000,day:42000,n:{ru:'4-местный номер',kk:'4 орынды нөмір',en:'Quadruple room'}},
+ {id:'jun',half:10000,day:20000,n:{ru:'Полулюкс',kk:'Жартылай люкс',en:'Junior suite'}},
+ {id:'lux',half:13000,day:26000,n:{ru:'Люкс',kk:'Люкс',en:'Suite'}}
+];
+const T={
+ru:{brand_kicker:'Гостиничный комплекс',nav_rooms:'Номера',nav_services:'Услуги',nav_reviews:'Отзывы',nav_book:'Бронь',
+hero_h1:'Уютный отдых <em>в&nbsp;Астане</em>',hero_p:'Чистые номера, сауна и бесплатная парковка. Платите за полсуток или за сутки.',hero_btn:'Забронировать',hero_btn2:'Цены',hero_proof:'отзыв гостей в 2ГИС',
+rooms_kicker:'Цены',rooms_h:'Номера и цены',th_room:'Номер',th_half:'Полсуток',th_day:'Сутки',choose:'Выбрать',rooms_note:'Продление: 1 час — 1 500 ₸. Бронирование бесплатно.',
+svc_kicker:'Услуги',svc_h:'Всё на месте',sauna_h:'Сауна',sauna_price:'5 000 ₸ / час',sauna_p:'Минимум 2 часа. До 4 человек, за каждого следующего доплата 500 ₸. Закажите 3 часа, и 4-й час в подарок.',vip_h:'VIP-сауна',vip_price:'12 000 ₸ / час',vip_p:'Минимум 2 часа. До 8 человек. Закажите 3 часа, и 4-й час в подарок.',
+s_rest:'Ресторан',s_rest_v:'по меню',s_park:'Парковка',s_free:'бесплатно',s_wifi_v:'бесплатно для гостей',s_biz:'Бизнес-центр',s_biz_v:'4 000 ₸ / час',s_print:'Распечатка',s_print_v:'50 ₸ / страница',s_laundry:'Прачечная',s_laundry_v:'200 ₸ / вещь',
+ph_kicker:'Фото',ph_h:'Как у нас',ph_soon:'Фото скоро',ph_1:'Здание гостиницы',ph_2:'Полулюкс',ph_3:'Люкс',ph_4:'Сауна',ph_5:'VIP-сауна',s_book:'Бронирование',
+rev_kicker:'Отзывы',rev_h:'Что говорят гости',rev_note:'Отзывы из 2ГИС, оставлены гостями. Всего 191 отзыв.',rev_link:'Читать все в 2ГИС',
+map_kicker:'Как добраться',map_h:'Улица Валиханова, 26',map_bus:'Автобус',map_stops:'остановки «Тұлпар» и «Жасыбай»',map_center:'до центра города',map_rail:'до железнодорожного вокзала',map_air:'до аэропорта',map_addr:'Астана, ул. Валиханова, 26',map_park:'Бесплатная парковка для гостей.',map_btn:'Открыть на карте 2ГИС',
+book_kicker:'Бронирование',book_h:'Ждём вас в гости',c_phone:'Телефон / WhatsApp',c_addr:'Адрес',
+f_in:'Дата заезда',f_room:'Номер',f_plan:'Тариф',opt_day:'Сутки',opt_half:'Полсуток',f_days:'Сколько суток',f_guests:'Гостей',f_name:'Ваше имя',f_total:'Примерная стоимость',f_send:'Отправить в WhatsApp',
+f_note:'Откроется чат WhatsApp с готовой заявкой. Если не открылся, напишите нам на +7 775 459 13 12.',foot:'Гостиничный комплекс «Жасыбай»',
+msg:['Здравствуйте! Хочу забронировать номер в гостинице «Жасыбай».','Номер','Заезд','Тариф','Гостей','Имя','Примерно'],dayword:'сут.'},
+kk:{brand_kicker:'Қонақүй кешені',nav_rooms:'Бөлмелер',nav_services:'Қызметтер',nav_reviews:'Пікірлер',nav_book:'Брондау',
+hero_h1:'Астанадағы <em>жайлы</em> демалыс',hero_p:'Таза бөлмелер, сауна және тегін көлік тұрағы. Жарты тәулікке немесе тәулікке төлейсіз.',hero_btn:'Брондау',hero_btn2:'Бағалар',hero_proof:'қонақ пікірі 2ГИС-те',
+rooms_kicker:'Бағалар',rooms_h:'Бөлмелер мен бағалар',th_room:'Бөлме',th_half:'Жарты тәулік',th_day:'Тәулік',choose:'Таңдау',rooms_note:'Ұзарту: 1 сағат — 1 500 ₸. Брондау тегін.',
+svc_kicker:'Қызметтер',svc_h:'Бәрі бір жерде',sauna_h:'Сауна',sauna_price:'Сағатына 5 000 ₸',sauna_p:'Кемінде 2 сағат. 4 адамға дейін, әр қосымша адамға 500 ₸. 3 сағатқа брондасаңыз, 4-ші сағат сыйлыққа.',vip_h:'VIP-сауна',vip_price:'Сағатына 12 000 ₸',vip_p:'Кемінде 2 сағат. 8 адамға дейін. 3 сағатқа брондасаңыз, 4-ші сағат сыйлыққа.',
+s_rest:'Мейрамхана',s_rest_v:'мәзір бойынша',s_park:'Көлік тұрағы',s_free:'тегін',s_wifi_v:'қонақтарға тегін',s_biz:'Бизнес-орталық',s_biz_v:'сағатына 4 000 ₸',s_print:'Басып шығару',s_print_v:'бетіне 50 ₸',s_laundry:'Кір жуу',s_laundry_v:'бір затқа 200 ₸',
+ph_kicker:'Фото',ph_h:'Біздің қонақүй',ph_soon:'Фото жақында',ph_1:'Қонақүй ғимараты',ph_2:'Жартылай люкс',ph_3:'Люкс',ph_4:'Сауна',ph_5:'VIP-сауна',s_book:'Брондау',
+rev_kicker:'Пікірлер',rev_h:'Қонақтар не дейді',rev_note:'2ГИС-тегі қонақтар пікірі, түпнұсқа тілінде. Барлығы 191 пікір.',rev_link:'2ГИС-те барлығын оқу',
+map_kicker:'Қалай жетуге болады',map_h:'Уәлиханов көшесі, 26',map_bus:'Автобус',map_stops:'«Тұлпар» және «Жасыбай» аялдамалары',map_center:'қала орталығына дейін',map_rail:'теміржол вокзалына дейін',map_air:'әуежайға дейін',map_addr:'Астана, Уәлиханов к-сі, 26',map_park:'Қонақтарға тегін көлік тұрағы.',map_btn:'2ГИС картасында ашу',
+book_kicker:'Брондау',book_h:'Қонаққа күтеміз',c_phone:'Телефон / WhatsApp',c_addr:'Мекенжай',
+f_in:'Келу күні',f_room:'Бөлме',f_plan:'Тариф',opt_day:'Тәулік',opt_half:'Жарты тәулік',f_days:'Неше тәулік',f_guests:'Қонақ саны',f_name:'Атыңыз',f_total:'Шамамен баға',f_send:'WhatsApp-қа жіберу',
+f_note:'WhatsApp чаты дайын өтінішпен ашылады. Ашылмаса, бізге +7 775 459 13 12 нөміріне жазыңыз.',foot:'«Жасыбай» қонақүй кешені',
+msg:['Сәлеметсіз бе! «Жасыбай» қонақүйінде бөлме брондағым келеді.','Бөлме','Келу күні','Тариф','Қонақ саны','Аты','Шамамен'],dayword:'тәул.'},
+en:{brand_kicker:'Hotel complex',nav_rooms:'Rooms',nav_services:'Services',nav_reviews:'Reviews',nav_book:'Book',
+hero_h1:'A cosy stay <em>in&nbsp;Astana</em>',hero_p:'Clean rooms, sauna and free parking. Pay for half a day or a full day.',hero_btn:'Book now',hero_btn2:'Prices',hero_proof:'guest reviews on 2GIS',
+rooms_kicker:'Prices',rooms_h:'Rooms and prices',th_room:'Room',th_half:'Half day',th_day:'Full day',choose:'Select',rooms_note:'Extension: 1 hour — 1,500 ₸. Booking is free.',
+svc_kicker:'Services',svc_h:'Everything on site',sauna_h:'Sauna',sauna_price:'5,000 ₸ / hour',sauna_p:'2 hours minimum. Up to 4 people, 500 ₸ for each extra guest. Book 3 hours and the 4th is free.',vip_h:'VIP sauna',vip_price:'12,000 ₸ / hour',vip_p:'2 hours minimum. Up to 8 people. Book 3 hours and the 4th is free.',
+s_rest:'Restaurant',s_rest_v:'à la carte',s_park:'Parking',s_free:'free',s_wifi_v:'free for guests',s_biz:'Business centre',s_biz_v:'4,000 ₸ / hour',s_print:'Printing',s_print_v:'50 ₸ / page',s_laundry:'Laundry',s_laundry_v:'200 ₸ / item',
+ph_kicker:'Photos',ph_h:'Inside the hotel',ph_soon:'Photo coming soon',ph_1:'Hotel building',ph_2:'Junior suite',ph_3:'Suite',ph_4:'Sauna',ph_5:'VIP sauna',s_book:'Booking',
+rev_kicker:'Reviews',rev_h:'What guests say',rev_note:'Guest reviews from 2GIS, in the original Russian. 191 reviews in total.',rev_link:'Read all on 2GIS',
+map_kicker:'Getting here',map_h:'26 Valikhanov Street',map_bus:'Bus',map_stops:'stops «Tulpar» and «Zhasybai»',map_center:'to the city centre',map_rail:'to the railway station',map_air:'to the airport',map_addr:'26 Valikhanov St, Astana',map_park:'Free parking for guests.',map_btn:'Open in 2GIS map',
+book_kicker:'Booking',book_h:'We look forward to your stay',c_phone:'Phone / WhatsApp',c_addr:'Address',
+f_in:'Check-in date',f_room:'Room',f_plan:'Rate',opt_day:'Full day',opt_half:'Half day',f_days:'Number of days',f_guests:'Guests',f_name:'Your name',f_total:'Estimated cost',f_send:'Send via WhatsApp',
+f_note:'A WhatsApp chat opens with your request ready. If it does not open, message us at +7 775 459 13 12.',foot:'Zhasybai hotel complex',
+msg:["Hello! I'd like to book a room at Zhasybai hotel.",'Room','Check-in','Rate','Guests','Name','Estimate'],dayword:'day(s)'}
+};
+const T2={
+ru:{rooms_note:'Цена за номер, для проживания на 1–5 ночей. Продление: 1 час — 1 500 ₸. Бронирование бесплатно.',tab_guests:'Гостям',tab_teams:'Командам и группам',
+tm_for_h:'Для кого',tm_for:'Спортивные команды, школы и организации',tm_price_h:'Цена',tm_price:'За человека, по согласованию',tm_food_h:'Питание',tm_food:'Ресторан гостиницы работает для команд, меню по договорённости',tm_how_h:'Как забронировать',tm_how:'Оставьте заявку: даты, сколько детей и взрослых',
+tm_big:'Цена по согласованию',tm_note:'Стоимость зависит от размера группы, дат и питания. Рассчитаем её после заявки.',tm_btn:'Оставить заявку для команды',
+mode_guest:'Гость',mode_team:'Команда / группа',f_team:'Команда или организация',f_nights:'Сколько ночей',f_meals:'Питание',meal_3:'Трёхразовое',meal_b:'Завтрак',meal_none:'Без питания',f_kids:'Детей',f_adults:'Взрослых (тренеры, родители)',f_team_total:'Стоимость',by_agreement:'по согласованию',
+tmsg:['Здравствуйте! Хотим забронировать гостиницу «Жасыбай» для команды.','КОМАНДА','Заезд','Ночей','Детей','Взрослых','Питание','Контакт']},
+kk:{rooms_note:'Бөлме бағасы, 1–5 түнге тұру үшін. Ұзарту: 1 сағат — 1 500 ₸. Брондау тегін.',tab_guests:'Қонақтарға',tab_teams:'Командалар мен топтарға',
+tm_for_h:'Кімге',tm_for:'Спорт командалары, мектептер мен ұйымдар',tm_price_h:'Баға',tm_price:'Бір адамға, келісім бойынша',tm_food_h:'Тамақ',tm_food:'Қонақүй мейрамханасы командаларға арналған, мәзір келісім бойынша',tm_how_h:'Қалай брондау',tm_how:'Өтініш қалдырыңыз: күндері, балалар мен ересектер саны',
+tm_big:'Баға келісім бойынша',tm_note:'Баға топ санына, күндерге және тамаққа байланысты. Өтініштен кейін есептеп береміз.',tm_btn:'Команда үшін өтініш қалдыру',
+mode_guest:'Қонақ',mode_team:'Команда / топ',f_team:'Команда немесе ұйым',f_nights:'Неше түн',f_meals:'Тамақ',meal_3:'Үш мезгіл',meal_b:'Таңғы ас',meal_none:'Тамақсыз',f_kids:'Балалар',f_adults:'Ересектер (жаттықтырушы, ата-ана)',f_team_total:'Баға',by_agreement:'келісім бойынша',
+tmsg:['Сәлеметсіз бе! «Жасыбай» қонақүйін команда үшін брондағымыз келеді.','КОМАНДА','Келу күні','Түн саны','Балалар','Ересектер','Тамақ','Байланыс']},
+en:{rooms_note:'Price per room, for stays of 1–5 nights. Extension: 1 hour — 1,500 ₸. Booking is free.',tab_guests:'Guests',tab_teams:'Teams and groups',
+tm_for_h:'Who for',tm_for:'Sports teams, schools and organisations',tm_price_h:'Price',tm_price:'Per person, on request',tm_food_h:'Meals',tm_food:'The hotel restaurant serves teams, menu by arrangement',tm_how_h:'How to book',tm_how:'Send a request with dates and the number of children and adults',
+tm_big:'Price on request',tm_note:'The cost depends on group size, dates and meals. We will calculate it after your request.',tm_btn:'Send a team request',
+mode_guest:'Guest',mode_team:'Team / group',f_team:'Team or organisation',f_nights:'Number of nights',f_meals:'Meals',meal_3:'Three meals a day',meal_b:'Breakfast',meal_none:'No meals',f_kids:'Children',f_adults:'Adults (coaches, parents)',f_team_total:'Cost',by_agreement:'on request',
+tmsg:['Hello! We would like to book Zhasybai hotel for a team.','TEAM','Check-in','Nights','Children','Adults','Meals','Contact']}
+};
+for(const l in T2)Object.assign(T[l],T2[l]);
+const T3={
+ru:{am_h:'В каждом номере',am_1:'Душ и туалет',am_2:'Телевизор',am_3:'Холодильник',am_4:'Бесплатный Wi-Fi',
+tm_cap_h:'Вместимость',tm_cap:'Больше 100 человек. Номера на 1, 2, 3 и 4 места',tm_food:'Трёхразовое: завтрак, обед и ужин в ресторане гостиницы',tm_pay_h:'Оплата',tm_pay:'Счёт для организаций, Kaspi, карта или наличные',
+nav_info:'Условия',info_kicker:'Условия',info_h:'Заезд и оплата',i1_h:'Заезд',i1:'В любое время. Ресепшн работает круглосуточно',i2_h:'Тарифы',i2:'Полсуток или сутки. Продление: 1 час — 1 500 ₸',i3_h:'Оплата',i3:'Kaspi, банковская карта, наличные, счёт для организаций',i4_h:'Бронь',i4:'Бесплатно и без предоплаты, через WhatsApp',
+faq_h:'Частые вопросы',
+q1:'Во сколько можно заехать?',a1:'В любое время. Ресепшн работает круглосуточно, оплата идёт за полсуток или за сутки.',
+q2:'Можно снять номер не на целые сутки?',a2:'Да, есть тариф на полсуток. Если нужно остаться дольше, продление стоит 1 500 ₸ за час.',
+q3:'Как можно оплатить?',a3:'Через Kaspi, банковской картой или наличными. Организациям выставляем счёт.',
+q4:'Есть ли парковка и Wi-Fi?',a4:'Да. Парковка и Wi-Fi для гостей бесплатные.',
+q5:'Вы принимаете спортивные команды?',a5:'Да. Можем разместить больше 100 человек в номерах на 1, 2, 3 и 4 места и организовать трёхразовое питание. Цена для команд по согласованию: оставьте заявку, и мы её рассчитаем.',
+q6:'Как забронировать сауну?',a6:'Напишите нам в WhatsApp. Сауна стоит 5 000 ₸ в час, VIP-сауна 12 000 ₸ в час, минимум 2 часа.',
+c_rec:'Ресепшн',c_rec_v:'Круглосуточно',q7:'Нужна ли предоплата?',a7:'Нет. Бронирование бесплатное, предоплата не нужна. Оплата при заселении.'},
+kk:{am_h:'Әр нөмірде',am_1:'Душ және дәретхана',am_2:'Теледидар',am_3:'Тоңазытқыш',am_4:'Тегін Wi-Fi',
+tm_cap_h:'Сыйымдылық',tm_cap:'100-ден астам адам. 1, 2, 3 және 4 орынды нөмірлер',tm_food:'Үш мезгіл: қонақүй мейрамханасында таңғы, түскі және кешкі ас',tm_pay_h:'Төлем',tm_pay:'Ұйымдарға шот, Kaspi, карта немесе қолма-қол ақша',
+nav_info:'Шарттар',info_kicker:'Шарттар',info_h:'Келу және төлем',i1_h:'Келу',i1:'Кез келген уақытта. Ресепшн тәулік бойы жұмыс істейді',i2_h:'Тарифтер',i2:'Жарты тәулік немесе тәулік. Ұзарту: 1 сағат — 1 500 ₸',i3_h:'Төлем',i3:'Kaspi, банк картасы, қолма-қол ақша, ұйымдарға шот',i4_h:'Брондау',i4:'Тегін және алдын ала төлемсіз, WhatsApp арқылы',
+faq_h:'Жиі қойылатын сұрақтар',
+q1:'Қай уақытта келуге болады?',a1:'Кез келген уақытта. Ресепшн тәулік бойы жұмыс істейді, төлем жарты тәулікке немесе тәулікке алынады.',
+q2:'Нөмірді толық тәулікке емес алуға бола ма?',a2:'Иә, жарты тәулік тарифі бар. Ұзағырақ қалу керек болса, ұзарту сағатына 1 500 ₸.',
+q3:'Қалай төлеуге болады?',a3:'Kaspi арқылы, банк картасымен немесе қолма-қол ақшамен. Ұйымдарға шот береміз.',
+q4:'Көлік тұрағы мен Wi-Fi бар ма?',a4:'Иә. Қонақтарға көлік тұрағы мен Wi-Fi тегін.',
+q5:'Спорт командаларын қабылдайсыздар ма?',a5:'Иә. 1, 2, 3 және 4 орынды нөмірлерге 100-ден астам адамды орналастырып, үш мезгіл тамақ ұйымдастыра аламыз. Командаларға баға келісім бойынша: өтініш қалдырыңыз, біз есептеп береміз.',
+q6:'Саунаны қалай брондауға болады?',a6:'Бізге WhatsApp-қа жазыңыз. Сауна сағатына 5 000 ₸, VIP-сауна сағатына 12 000 ₸, кемінде 2 сағат.',
+c_rec:'Ресепшн',c_rec_v:'Тәулік бойы',q7:'Алдын ала төлем керек пе?',a7:'Жоқ. Брондау тегін, алдын ала төлем қажет емес. Төлем қонақүйге келгенде жасалады.'},
+en:{am_h:'In every room',am_1:'Shower and toilet',am_2:'TV',am_3:'Fridge',am_4:'Free Wi-Fi',
+tm_cap_h:'Capacity',tm_cap:'More than 100 people. Rooms for 1, 2, 3 and 4 guests',tm_food:'Three meals a day: breakfast, lunch and dinner in the hotel restaurant',tm_pay_h:'Payment',tm_pay:'Invoice for organisations, Kaspi, card or cash',
+nav_info:'Terms',info_kicker:'Terms',info_h:'Check-in and payment',i1_h:'Check-in',i1:'At any time. Reception is open 24 hours',i2_h:'Rates',i2:'Half day or full day. Extension: 1 hour — 1,500 ₸',i3_h:'Payment',i3:'Kaspi, bank card, cash, invoice for organisations',i4_h:'Booking',i4:'Free and with no prepayment, via WhatsApp',
+faq_h:'Frequent questions',
+q1:'What time can I check in?',a1:'At any time. Reception is open 24 hours, and you pay for half a day or a full day.',
+q2:'Can I book a room for less than a full day?',a2:'Yes, there is a half-day rate. If you need to stay longer, an extension costs 1,500 ₸ per hour.',
+q3:'How can I pay?',a3:'With Kaspi, bank card or cash. We issue invoices for organisations.',
+q4:'Is there parking and Wi-Fi?',a4:'Yes. Parking and Wi-Fi are free for guests.',
+q5:'Do you host sports teams?',a5:'Yes. We can accommodate more than 100 people in rooms for 1, 2, 3 and 4 guests and arrange three meals a day. Team prices are on request: send a request and we will calculate the cost.',
+q6:'How do I book the sauna?',a6:'Message us on WhatsApp. The sauna is 5,000 ₸ per hour, the VIP sauna 12,000 ₸ per hour, 2 hours minimum.',
+c_rec:'Reception',c_rec_v:'24 hours',q7:'Do I need to prepay?',a7:'No. Booking is free and no prepayment is needed. You pay at check-in.'}
+};
+for(const l in T3)Object.assign(T[l],T3[l]);
+const T4={
+ru:{g_rest:'Ресторан для команд',ph_h:'Фото гостиницы',ph_note:'Листайте вбок и нажмите на фото, чтобы увеличить.',g_lb:'Холл и ресепшн',g_dbl:'Номера с двуспальной кроватью',g_lux:'Большой номер с диваном',g_2:'Номера на 2 места',g_3:'Номера на 3 места',g_4:'Номера на 4 места'},
+kk:{g_rest:'Командаларға арналған мейрамхана',ph_h:'Қонақүй суреттері',ph_note:'Жанына қарай сырғытып, үлкейту үшін суретті басыңыз.',g_lb:'Холл және ресепшн',g_dbl:'Екі кісілік төсегі бар нөмірлер',g_lux:'Диваны бар үлкен нөмір',g_2:'2 орынды нөмірлер',g_3:'3 орынды нөмірлер',g_4:'4 орынды нөмірлер'},
+en:{g_rest:'Restaurant for teams',ph_h:'Hotel photos',ph_note:'Swipe sideways and tap a photo to enlarge it.',g_lb:'Lobby and reception',g_dbl:'Rooms with a double bed',g_lux:'Large room with sofa',g_2:'Rooms for 2',g_3:'Rooms for 3',g_4:'Rooms for 4'}
+};
+for(const l in T4)Object.assign(T[l],T4[l]);
+function initLb(){
+const phs=[...document.querySelectorAll('.ph')];let cur=0,lastFocus=null;
+function showPh(i){cur=(i+phs.length)%phs.length;const im=phs[cur].querySelector('img');$('lbImg').src=im.src;$('lbImg').alt=im.alt;const li=$('lbImg');li.style.animation='none';void li.offsetWidth;li.style.animation='';}
+function openLb(i){lastFocus=document.activeElement;showPh(i);$('lb').hidden=false;$('lbClose').focus();}
+function closeLb(){$('lb').hidden=true;$('lbImg').removeAttribute('src');if(lastFocus)lastFocus.focus();}
+phs.forEach((b,i)=>b.addEventListener('click',()=>openLb(i)));
+$('lbClose').addEventListener('click',closeLb);
+$('lbPrev').addEventListener('click',()=>showPh(cur-1));
+$('lbNext').addEventListener('click',()=>showPh(cur+1));
+$('lb').addEventListener('click',e=>{if(e.target===$('lb'))closeLb();});
+document.addEventListener('keydown',e=>{if($('lb').hidden)return;if(e.key==='Escape')closeLb();else if(e.key==='ArrowLeft')showPh(cur-1);else if(e.key==='ArrowRight')showPh(cur+1);});
+let tx=null;$('lb').addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
+$('lb').addEventListener('touchend',e=>{if(tx===null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)showPh(cur+(dx<0?1:-1));tx=null;});
+}
+let mode='guest';
+const $=id=>document.getElementById(id);
+const money=n=>n.toLocaleString('ru-RU').replace(/ /g,' ')+' ₸';
+let lang='ru';
+
+function renderRooms(){
+  $('roomRows').innerHTML=ROOMS.map(r=>`<tr><td>${r.n[lang]}</td><td class="num">${money(r.half)}</td><td class="num day">${money(r.day)}</td><td class="act"><button type="button" data-room="${r.id}">${T[lang].choose}</button></td></tr>`).join('');
+  const cur=$('room').value||'std';
+  $('room').innerHTML=ROOMS.map(r=>`<option value="${r.id}">${r.n[lang]}</option>`).join('');
+  $('room').value=cur;
+}
+function setLang(l){
+  lang=l;const d=T[l];document.documentElement.lang=l;
+  document.querySelectorAll('[data-t]').forEach(el=>{if(d[el.dataset.t]!=null)el.textContent=d[el.dataset.t];});
+  document.querySelectorAll('[data-th]').forEach(el=>{el.innerHTML=d[el.dataset.th];});
+  document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===l));
+  renderRooms();update();
+  try{if(document.body.animate&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.body.animate([{opacity:.4},{opacity:1}],{duration:350,easing:'ease-out'});}catch(e){}
+  try{localStorage.setItem('zh_lang',l)}catch(e){}
+}
+function update(){
+  const r=ROOMS.find(x=>x.id===$('room').value)||ROOMS[0];
+  const half=$('plan').value==='half';
+  $('daysWrap').hidden=half;
+  const days=Math.max(1,Math.min(30,parseInt($('days').value)||1));
+  const sum=half?r.half:r.day*days;
+  $('total').textContent=money(sum);const tb=$('total');tb.classList.remove('bump');void tb.offsetWidth;tb.classList.add('bump');
+  const d=T[lang],m=d.msg,date=$('checkin').value?$('checkin').value.split('-').reverse().join('.'):'';
+  const name=$('name').value.trim();
+  let text;
+  if(mode==='team'){
+    const tm=d.tmsg,ms=$('meals'),meal=ms.options[ms.selectedIndex].text,team=$('team').value.trim()||'—';
+    text=[tm[0],`${tm[1]}: ${team}`,`${tm[2]}: ${date}`,`${tm[3]}: ${$('nights').value}`,`${tm[4]}: ${$('kids').value}`,`${tm[5]}: ${$('adults').value}`,`${tm[6]}: ${meal}`].concat(name?[`${tm[7]}: ${name}`]:[]).join('\n');
+  }else{
+    const plan=half?d.opt_half:`${d.opt_day} × ${days}`;
+    text=[m[0],`${m[1]}: ${r.n[lang]}`,`${m[2]}: ${date}`,`${m[3]}: ${plan}`,`${m[4]}: ${$('guests').value}`].concat(name?[`${m[5]}: ${name}`]:[]).concat([`${m[6]}: ${money(sum)}`]).join('\n');
+  }
+  $('waBtn').href='https://wa.me/77754591312?text='+encodeURIComponent(text);
+}
+function setMode(m){
+  mode=m;$('guestFields').hidden=m!=='guest';$('teamFields').hidden=m!=='team';
+  document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===m));update();
+}
+function setTab(t){
+  document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===t));
+  $('panel-guests').hidden=t!=='guests';$('panel-teams').hidden=t!=='teams';
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-room]');if(b){$('room').value=b.dataset.room;setMode('guest');$('book').scrollIntoView();}
+  const lb=e.target.closest('[data-lang]');if(lb)setLang(lb.dataset.lang);
+  const tb=e.target.closest('[data-tab]');if(tb)setTab(tb.dataset.tab);
+  const mb=e.target.closest('[data-mode]');if(mb)setMode(mb.dataset.mode);
+  if(e.target.closest('[data-team-book]')){setMode('team');$('book').scrollIntoView();}
+});
+['room','plan','days','guests','name','checkin','team','nights','kids','adults','meals'].forEach(id=>$(id).addEventListener('input',update));
+$('bookForm').addEventListener('submit',e=>e.preventDefault());
+const t=new Date();t.setDate(t.getDate()+1);$('checkin').value=t.toISOString().slice(0,10);$('checkin').min=new Date().toISOString().slice(0,10);
+let saved='ru';try{saved=localStorage.getItem('zh_lang')||'ru'}catch(e){}
+initLb();
+(function(){
+  const reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const bar=$('progress'),fab=$('fab'),book=$('book');let bookVis=false,ticking=false;
+  function onScroll(){ticking=false;const h=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')';fab.classList.toggle('show',scrollY>500&&!bookVis);}
+  addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(onScroll);}},{passive:true});
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(es=>{bookVis=es[0].isIntersecting;onScroll();},{threshold:.15}).observe(book);
+    const sup=window.CSS&&CSS.supports&&CSS.supports('animation-timeline: view()');
+    if(!sup&&!reduce){
+      const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('io-in');io.unobserve(e.target);}}),{rootMargin:'0px 0px -8% 0px'});
+      document.querySelectorAll('.ph,section h2,section .kicker,.review,.sauna,.svc-list li,.gal-group,.cond div,details,.stops li,.addr-card,tbody tr,.amen-wrap,.band dl>div,form').forEach(el=>{if(el.getBoundingClientRect().top>innerHeight)io.observe(el);});
+    }
+  }
+  onScroll();
+  if(!reduce){
+    document.querySelectorAll('.ph img').forEach(img=>{
+      const done=()=>{img.classList.remove('pending');img.classList.add('loaded');};
+      if(img.complete&&img.naturalWidth){done();}
+      else{img.classList.add('pending');img.addEventListener('load',done,{once:true});img.addEventListener('error',()=>img.classList.remove('pending'),{once:true});}
+    });
+  }
+})();
+(function(){const b=document.querySelector('.proof b');if(!b||!window.matchMedia||matchMedia('(prefers-reduced-motion: reduce)').matches)return;const end=191,start=120,t0=performance.now(),d=1300;function step(t){const k=Math.min(1,Math.max(0,(t-t0)/d));b.textContent=Math.round(start+(end-start)*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(step);}requestAnimationFrame(step);})();
+setLang(T[saved]?saved:'ru');
+})();
+</script>
+</body>
+</html>
